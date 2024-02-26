@@ -1,4 +1,4 @@
-insertContent('loading')
+insertContent('home')
 function insertContent(id, payload) {
     const placeholder = document.getElementById('content-placeholder');
     if (placeholder) {
