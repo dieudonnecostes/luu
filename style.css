@@ -139,7 +139,7 @@ section {
 }
 
 .loading-particle {
-    width: .5rem;
+    width: .4rem;
     height: 1rem;
     background-color: var(--primaryAccent);
     border-radius: 0;
@@ -224,6 +224,10 @@ section {
     -webkit-user-select: none;
     user-select: none;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.single-user p{
+    white-space: nowrap;
 }
 
 .single-user:hover {

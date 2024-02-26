@@ -1,4 +1,4 @@
-insertContent('home')
+insertContent('loading')
 function insertContent(id, payload) {
     const placeholder = document.getElementById('content-placeholder');
     if (placeholder) {
@@ -35,7 +35,7 @@ function insertContent(id, payload) {
                     fetch("https://randomuser.me/api/?gender=female&results=10").then(raw => raw.json()).then((res) => {
                         insertContent('display-users', { users: res.results })
                     })
-                }, 2000)
+                }, 2500)
 
                 break;
             case 'display-users':
@@ -50,8 +50,8 @@ function insertContent(id, payload) {
                             alt="LUU-user"
                             />
                             <p>${e.name.first} ${e.name.last}</p>
-                        </div>`.replaceAll(",", "")
-                })}
+                        </div>`
+                }).toString().replaceAll(",", "")}
                         <div onclick="displayDialog(1)" class="single-user" style="top:10rem; left: 4rem;">
                             <img
                             src="../imgs/lydie.JPG"
